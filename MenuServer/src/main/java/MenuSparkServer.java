@@ -14,6 +14,8 @@ public class MenuSparkServer {
     private static String htmlLocation;
 
 
+    //args 0 is file with erver info
+    //args 1 is file with db info
     public static void main(String[] args) {
         if (args.length != 2) {
             throw new IllegalArgumentException("Not enough arguments require config files!");

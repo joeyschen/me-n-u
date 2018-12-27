@@ -30,7 +30,7 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <finalName>ScavengerHuntServer-Dependencies</finalName>
+                            <finalName>MenuServer-Dependencies</finalName>
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>
@@ -60,14 +60,14 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <name>ScavengerHuntServer</name>
+                    <name>MenuServer</name>
                     <group>test</group>
                     <release>1</release>
                     <targetOS>Linux</targetOS>
                     <needarch>noarch</needarch>
-                    <description>Runs ScavengerHuntServer</description>
+                    <description>Runs MenuServer</description>
                     <defineStatements>
-                        <defineStatement>ScavengerHuntServer</defineStatement>
+                        <defineStatement>MenuServer</defineStatement>
                         <defineStatement>version 1</defineStatement>
                         <defineStatement>release 0</defineStatement>
                     </defineStatements>
@@ -100,9 +100,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <version>1.4.4</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.5</version>
         </dependency>
 
         <dependency>
